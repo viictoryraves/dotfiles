@@ -1,0 +1,129 @@
+@import "macchiato.css";
+
+* {
+  font-family: "Nerd Font Mono";
+  font-size: 13px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 0;
+  background-color: @surface0;
+  margin-left: 0.8rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#cpu,
+#memory,
+#clock,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.3rem 0.6rem;
+  margin: 0;
+}
+
+/* Standalone pills */
+#network {
+  color: @sapphire;
+  border-radius: 1rem;
+  margin-left: 0.6rem;
+}
+
+#bluetooth {
+  color: @sky;
+  border-radius: 1rem;
+  margin-left: 0.4rem;
+  min-width: 0;
+}
+
+/* Main stats pill: pulseaudio → backlight → cpu → memory → battery → clock */
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 0.6rem;
+}
+
+#backlight {
+  color: @yellow;
+  border-radius: 0;
+}
+
+#cpu {
+  color: @teal;
+  border-radius: 0;
+}
+
+#memory {
+  color: @mauve;
+  border-radius: 0;
+}
+
+#battery {
+  color: @green;
+  border-radius: 0;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 0.6rem;
+}
+
+#tray {
+  margin-right: 0.6rem;
+  border-radius: 1rem;
+}
+
+#custom-music {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#custom-lock {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @lavender;
+  margin-left: 0.6rem;
+}
+
+#custom-power {
+  margin-right: 0.8rem;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @red;
+}
