@@ -2,6 +2,10 @@
 
 This repo will save all my-setup for my different laptops
 
+This method is inspired by the comment in Hacker News:
+
+[Ask HN: What do you use to manage dotfiles?](https://news.ycombinator.com/item?id=11071754)
+
 I will use one branch per OS
 
 ## main
