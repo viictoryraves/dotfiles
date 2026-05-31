@@ -9,6 +9,7 @@ This method is inspired by the comment in Hacker News:
 I will use one branch per OS
 
 ## main
+
 - OS: Arch Linux x86_64
 - Host: MacBook Pro (Retina, 13-inch, )
 - Kernel: Linux 6.19.6-arch1-1
@@ -18,3 +19,20 @@ I will use one branch per OS
 - Terminal Font: NotoSansMono-Regular
 - CPU: Intel(R) Core(TM) i5-4258U (4)
 - GPU: Intel Haswell-ULT Integrated Gr
+
+## dotfiles
+
+```
+git init --bare ~/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+dotfiles config status.showUntrackedFiles no
+```
+
+Your dotfiles can be replicated on a new system like:
+
+```
+git clone --bare <git-repo-url> $HOME/.dotfiles
+$ alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+$ dotfiles checkout
+$ dotfiles config --local status.showUntrackedFiles no
+```
