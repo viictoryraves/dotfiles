@@ -20,7 +20,7 @@ I will use one branch per OS
 - CPU: Intel(R) Core(TM) i5-4258U (4)
 - GPU: Intel Haswell-ULT Integrated Gr
 
-## dotfiles
+## set-up
 
 ```
 git init --bare ~/.dotfiles
