@@ -63,21 +63,6 @@
     "format-alt": " {:%d/%m/%Y}",
     "format": " {:%H:%M}"
   },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
   "cpu": {
     "interval": 1,
     "format": " {icon0}{icon1}{icon2}{icon3}",

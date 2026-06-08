@@ -36,11 +36,9 @@
 
 #custom-music,
 #tray,
-#backlight,
 #cpu,
 #memory,
 #clock,
-#battery,
 #network,
 #custom-bluetooth,
 #pulseaudio,
@@ -75,12 +73,6 @@
   border-radius: 1rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
-}
-
-/* System stats pill: backlight → cpu → memory */
-#backlight {
-  color: @yellow;
-  border-radius: 0;
 }
 
 #cpu {
