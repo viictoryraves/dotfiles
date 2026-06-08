@@ -1,0 +1,46 @@
+# Sensitive credentials & keys — never track
+.ssh/
+.gnupg/
+.pki/
+.pulse-cookie
+.claude/
+.claude.json
+
+# Application data with cookies/sessions/browsing history
+.config/discord/
+.config/mozilla/
+
+# Caches & generated/runtime data
+.cache/
+.npm/
+.local/
+.zcompdump
+.viminfo
+.config/dconf/
+.config/cachyos/
+.config/cachyos-hello.json
+.config/pulse/
+.config/OpenRGB/
+.config/micro/
+.config/openrazer/
+.config/polychromatic/
+.config/mimeapps.list
+.config/user-dirs.dirs
+.config/user-dirs.locale
+
+# Steam / gaming runtime data
+.steam/
+.steampath
+.steampid
+
+# Personal data directories
+Desktop/
+Documents/
+Games/
+
+# Independently-managed clones (not vendored dotfiles)
+powerlevel10k/
+xpadneo/
+
+# This bare repo itself
+.dotfiles/
