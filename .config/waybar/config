@@ -15,6 +15,7 @@
     "custom/bluetooth",
     "pulseaudio",
     "backlight",
+    "custom/gpu",
     "cpu",
     "memory",
     "clock",
@@ -63,6 +64,12 @@
     "format-alt": " {:%d/%m/%Y}",
     "format": " {:%H:%M}"
   },
+  "custom/gpu": {
+    "exec": "~/.config/waybar/scripts/gpu.sh",
+    "interval": 2,
+    "format": "{}",
+    "tooltip": false
+  },
   "cpu": {
     "interval": 1,
     "format": " {icon0}{icon1}{icon2}{icon3}",
@@ -96,7 +103,7 @@
   },
   "custom/lock": {
     "tooltip": false,
-    "on-click": "hyprlock",
+    "on-click": "~/.config/hypr/Scripts/lock.sh",
     "format": "",
   },
   "custom/power": {

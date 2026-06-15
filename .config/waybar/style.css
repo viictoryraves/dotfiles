@@ -38,6 +38,7 @@
 #tray,
 #cpu,
 #memory,
+#custom-gpu,
 #clock,
 #network,
 #custom-bluetooth,
@@ -70,6 +71,13 @@
 /* Standalone pill: volume */
 #pulseaudio {
   color: @maroon;
+  border-radius: 1rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+#custom-gpu {
+  color: @green;
   border-radius: 1rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
