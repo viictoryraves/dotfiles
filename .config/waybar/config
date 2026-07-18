@@ -2,7 +2,7 @@
   "layer": "top", // Waybar at top layer
   "exclusive": true,
   "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 40,
+  "height": 30,
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces"
@@ -20,6 +20,7 @@
     "memory",
     "clock",
     "tray",
+    "hyprland/language",
     "custom/lock",
     "custom/power"
   ],
@@ -34,6 +35,10 @@
   "tray": {
     "icon-size": 20,
     "spacing": 10
+  },
+  "hyprland/language": {
+    "format": " {short}",
+    "on-click": "hyprctl switchxkblayout current next"
   },
   "network": {
     "format-wifi": " {essid}",
