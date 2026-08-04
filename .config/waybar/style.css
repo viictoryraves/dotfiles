@@ -2,7 +2,7 @@
 
 * {
   font-family: "Nerd Font Mono";
-  font-size: 13px;
+  font-size: 11px;
   min-height: 0;
 }
 
@@ -12,15 +12,15 @@
 }
 
 #workspaces {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin: 0;
   background-color: @surface0;
-  margin-left: 0.8rem;
+  margin-left: 0.3rem;
 }
 
 #workspaces button {
   color: @lavender;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   padding: 0.3rem;
 }
 
@@ -55,41 +55,45 @@
 #network {
   color: @sapphire;
   border-radius: 1rem;
-  margin-left: 0.6rem;
+  margin-left: 0.3rem;
 }
 
 #bluetooth {
   color: @sky;
   border-radius: 1rem;
-  margin-left: 0.4rem;
+  margin-left: 0.3rem;
   min-width: 0;
 }
 
-/* Main stats pill: pulseaudio → backlight → cpu → memory → battery → clock */
-#pulseaudio {
-  color: @maroon;
+/* Memory + CPU pill */
+#memory {
+  color: @mauve;
   border-radius: 1rem 0px 0px 1rem;
-  margin-left: 0.6rem;
-}
-
-#backlight {
-  color: @yellow;
-  border-radius: 0;
+  margin-left: 0.3rem;
 }
 
 #cpu {
   color: @teal;
-  border-radius: 0;
+  border-radius: 0px 1rem 1rem 0px;
 }
 
-#memory {
-  color: @mauve;
-  border-radius: 0;
+/* Standalone pills: pulseaudio, backlight, battery, clock, tray */
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
+}
+
+#backlight {
+  color: @yellow;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
 }
 
 #battery {
   color: @green;
-  border-radius: 0;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
 }
 
 #battery.charging {
@@ -102,13 +106,13 @@
 
 #clock {
   color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 0.6rem;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
 }
 
 #tray {
-  margin-right: 0.6rem;
   border-radius: 1rem;
+  margin-left: 0.3rem;
 }
 
 #custom-music {
@@ -119,11 +123,11 @@
 #custom-lock {
   border-radius: 1rem 0px 0px 1rem;
   color: @lavender;
-  margin-left: 0.6rem;
+  margin-left: 0.3rem;
 }
 
 #custom-power {
-  margin-right: 0.8rem;
+  margin-right: 0.3rem;
   border-radius: 0px 1rem 1rem 0px;
   color: @red;
 }
